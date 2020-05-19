@@ -43,7 +43,7 @@ const Home = () => {
     >
       <Search />
 
-      <h2 className="titles">New Arrivals</h2>
+      <h2 className="titles">New Arrivals, Winter Collection</h2>
       <div className="row row-sizing">
         {productsByArrival.map((product, i) => (
           <div key={i}>
