@@ -41,5 +41,8 @@
   },
   "devDependencies": {
     "css-loader": "^3.5.3"
+  },
+  "engines": {
+    "node": "v12.13.1"
   }
 }
