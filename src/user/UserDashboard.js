@@ -65,9 +65,9 @@ const Dashboard = () => {
   const purchaseHistory = (history) => {
     return (
       <div className="card mb-5">
-        <h3 className="card-header">Purchase history</h3>
+        <h3 className="card-header user-dashboard-header">Purchase history</h3>
         <ul className="list-group">
-          <li className="list-group-item">
+          <li className="list-group-item user-dashboard-p">
             {history.map((h, i) => {
               return (
                 <div>
