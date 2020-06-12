@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import Layout from './Layout';
-import { getProducts } from './apiCore';
-import Card from './Card';
-import Search from './Search';
+import React, { useState, useEffect } from "react";
+import Layout from "./Layout";
+import { getProducts } from "./apiCore";
+import Card from "./Card";
+import Search from "./Search";
 
 const Home = () => {
   const [productsBySell, setProductsBySell] = useState([]);
@@ -10,7 +10,7 @@ const Home = () => {
   const [error, setError] = useState(false);
 
   const loadProductsBySell = () => {
-    getProducts('sold').then((data) => {
+    getProducts("sold").then((data) => {
       if (data.error) {
         setError(data.error);
       } else {
@@ -20,7 +20,7 @@ const Home = () => {
   };
 
   const loadProductsByArrival = () => {
-    getProducts('createdAt').then((data) => {
+    getProducts("createdAt").then((data) => {
       console.log(data);
       if (data.error) {
         setError(data.error);
@@ -43,7 +43,7 @@ const Home = () => {
     >
       <Search />
 
-      <h2 className="titles">New Arrivals, Winter Collection</h2>
+      <h2 className="titles">New Arrivals</h2>
       <div className="row row-sizing">
         {productsByArrival.map((product, i) => (
           <div key={i}>
